@@ -79,6 +79,9 @@ body{
     position: relative;
     top: 40px;
 }
+#case:hover{
+    border-bottom: 2px solid var(--clr-orange);
+}
 .login{
     background-color: var(--clr-dark);
     position: relative;
