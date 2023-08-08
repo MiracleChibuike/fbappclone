@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --clr-orange: #ffa500;
+    --clr-white: #fff;
+    --clr-dark-blue: #1100fe;
+    --clr-dark: #000;
+}
+body{
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 15px;
+    /* font-weight: bold; */
+    background: url(../images/galaxybg.jpg) no-repeat center/cover;
+    min-height: 100vh;
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    padding: 10px;
+    position: relative;
+    top: 20px;
+}
+.iconNotifucation i{
+    position: relative;
+    left: -10px;
+    top: 10px;
+    font-size: 30px;
+    color: var(--clr-white);
+    font-size: 30px;
+    margin-top: 10px;
+}
+.fbLogo{
+    width: 400px;
+    text-align: center;
+}
+
+.boxesGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.boxesGrid > div{
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--clr-dark);
+    color:  var(--clr-white);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: 50px;
+}
+.boxesGrid > div i{
+    color: var(--clr-orange);
+    font-size: 25px;
+    margin: 10px;
+}
+.createPin{
+    background-color: var(--clr-dark);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    color: var(--clr-white);
+    position: relative;
+    top: 50px;
+    min-height: 100px;
+}
+#case{
+    width: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid var(--clr-white);
+    height: 2px;
+    margin: 5px;
+    outline: none;
+    position: relative;
+    top: 40px;
+}
+.login{
+    background-color: var(--clr-dark);
+    position: relative;
+    top: 50px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: var(--clr-white);
+}
+.login i{
+    /* color: var(--clr-orange); */
+    font-size: 20px;
+    margin-left: -10px;
+}
+.login p{
+    margin-left: 15px;
+}
+@media only screen and (min-width: 100px) and (max-width: 700px){
+    .fbLogo{
+        width: 200px;
+        text-align: center;
+        margin-left: 45px;
+    }
+}
