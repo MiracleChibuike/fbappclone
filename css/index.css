@@ -15,6 +15,7 @@ body{
     /* font-weight: bold; */
     background: url(../images/galaxybg.jpg) no-repeat center/cover;
     min-height: 100vh;
+    overflow-y: hidden;
 }
 .upper{
     display: flex;
@@ -22,7 +23,7 @@ body{
     /* background-color: red; */
     padding: 10px;
     position: relative;
-    top: 20px;
+    top: 10px;
 }
 .iconNotifucation i{
     position: relative;
@@ -50,7 +51,7 @@ body{
     text-align: center;
     padding: 10px;
     position: relative;
-    top: 50px;
+    top: 30px;
 }
 .boxesGrid > div i{
     color: var(--clr-orange);
@@ -64,7 +65,7 @@ body{
     padding: 10px;
     color: var(--clr-white);
     position: relative;
-    top: 50px;
+    top: 20px;
     min-height: 100px;
 }
 #case{
@@ -81,11 +82,12 @@ body{
 }
 #case:hover{
     border-bottom: 2px solid var(--clr-orange);
+    transition: .7s;
 }
 .login{
     background-color: var(--clr-dark);
     position: relative;
-    top: 50px;
+    top: 20px;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
@@ -100,6 +102,13 @@ body{
 }
 .login p{
     margin-left: 15px;
+}
+.info{
+    color: var(--clr-white);
+    margin-top: 25px;
+    font-size: 10px;
+    text-align: center;
+
 }
 @media only screen and (min-width: 100px) and (max-width: 700px){
     .fbLogo{
