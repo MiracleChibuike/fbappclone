@@ -26,8 +26,6 @@ body{
     justify-content: space-between;
     /* background-color: red; */
     padding: 10px;
-    position: relative;
-    top: 10px;
 }
 .iconNotifucation i{
     position: relative;
@@ -39,7 +37,6 @@ body{
 }
 .fbLogo{
     width: 400px;
-    text-align: center;
 }
 
 .boxesGrid{
@@ -47,7 +44,8 @@ body{
     grid-template-columns: repeat(3, 1fr);
     /* column-gap: 5px; */
     /* row-gap: 2px; */
-    gap: 7px;
+    grid-column-gap: 10px;
+    grid-row-gap: 1px;
 }
 .boxesGrid > div{
     margin-bottom: 10px;
@@ -115,8 +113,10 @@ body{
     font-size: 20px;
     margin-left: -10px;
 }
-.login p{
+.login a{
     margin-left: 15px;
+    color: var(--clr-white);
+    text-decoration: none;
 }
 .info{
     color: var(--clr-white);
