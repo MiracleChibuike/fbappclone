@@ -17,6 +17,10 @@ body{
     min-height: 100vh;
     overflow-y: hidden;
 }
+.parent{
+    margin-left: 20px;
+    margin-right: 20px;
+}
 .upper{
     display: flex;
     justify-content: space-between;
@@ -27,11 +31,10 @@ body{
 }
 .iconNotifucation i{
     position: relative;
-    left: -10px;
+    left: 10px;
     top: 10px;
-    font-size: 30px;
     color: var(--clr-white);
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 10px;
 }
 .fbLogo{
@@ -42,10 +45,13 @@ body{
 .boxesGrid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* column-gap: 5px; */
+    /* row-gap: 2px; */
+    gap: 7px;
 }
 .boxesGrid > div{
-    margin: 10px;
-    border-radius: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
     background-color: var(--clr-dark);
     color:  var(--clr-white);
     text-align: center;
@@ -66,19 +72,25 @@ body{
     color: var(--clr-white);
     position: relative;
     top: 20px;
+    /* left: -20px; */
+    right: 13px;
     min-height: 100px;
+    min-width: 340px;
 }
 #case{
-    width: 50px;
+    width: 35px;
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: 2px solid var(--clr-white);
-    height: 2px;
+    background: transparent;
+    padding-bottom: 10px;
     margin: 5px;
     outline: none;
     position: relative;
-    top: 40px;
+    top: 20px;
+    color: var(--clr-white);
+    text-align: center;
 }
 #case:hover{
     border-bottom: 2px solid var(--clr-orange);
@@ -88,12 +100,15 @@ body{
     background-color: var(--clr-dark);
     position: relative;
     top: 20px;
+    right: 13px;
     border-radius: 10px;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     justify-content: center;
     color: var(--clr-white);
+    min-width: 340px;
+
 }
 .login i{
     /* color: var(--clr-orange); */
@@ -105,7 +120,7 @@ body{
 }
 .info{
     color: var(--clr-white);
-    margin-top: 25px;
+    margin-top: 30px;
     font-size: 10px;
     text-align: center;
 
