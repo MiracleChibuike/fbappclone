@@ -71,9 +71,9 @@ body{
     position: relative;
     top: 20px;
     /* left: -20px; */
-    right: 13px;
+    /* right: 13px; */
     min-height: 100px;
-    min-width: 340px;
+    /* min-width: 340px; */
 }
 #case{
     width: 35px;
@@ -98,14 +98,13 @@ body{
     background-color: var(--clr-dark);
     position: relative;
     top: 20px;
-    right: 13px;
+    /* right: 13px; */
     border-radius: 10px;
     margin: 10px;
     padding: 15px;
     display: flex;
     justify-content: center;
     color: var(--clr-white);
-    min-width: 340px;
 
 }
 .login i{
