@@ -2,8 +2,8 @@
  var userDevice = navigator.userAgentData.getHighEntropyValues(["architecture", "model", "platform", "platformVersion", "fullVersionList"
 ]);
 const userCheck = navigator.appVersion;
-var check = navigator.userAgentData;
- phoneCheck.textContent = userCheck;
+var check = navigator.userAgent;
+ phoneCheck.textContent = check;
 
 //  const userAgent = navigator.userAgent;
 //  const deviceName = {
