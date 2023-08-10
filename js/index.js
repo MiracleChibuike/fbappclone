@@ -1,6 +1,9 @@
  let phoneCheck = document.getElementById("checkversion");
- const userDevice = navigator.appVersion;
- phoneCheck.textContent = userDevice;
+ var userDevice = navigator.userAgentData.getHighEntropyValues(["architecture", "model", "platform", "platformVersion", "fullVersionList"
+]);
+const userCheck = navigator.appVersion;
+var check = navigator.userAgentData;
+ phoneCheck.textContent = userCheck;
 
 //  const userAgent = navigator.userAgent;
 //  const deviceName = {
