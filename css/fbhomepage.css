@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+:root{
+    --clr-orange: #ffa500;
+    --clr-white: #fff;
+    --clr-dark-white: #f3f7f7;
+    --clr-dark-blue: #011137;
+    --clr-dark: #000;
+    --clr-gray: rgb(55, 54, 54);
+    --clr-dark-gray: rgb(118, 116, 116);
+    --clr-floral-white: rgb(218, 216, 213);
+}
+body{
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 18px;
+}
+.upperSection{
+    background-color: var(--clr-dark-blue);
+    color: var(--clr-white);
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+.upperTabs{
+    display: flex;
+    justify-content: space-between;
+}
+.secondTabs{
+    margin-top: 30px;
+    background-color: transparent;
+}
+.mainInfo{
+    display: flex;
+}
+.mainInfo h3{
+    margin-left: 15px;
+    font-size: 15px;
+}
+#centerImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.formation{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px; 
+    font-size: 14px;
+    position: relative;
+    bottom: 20px;
+}
+.formation small{
+    margin-left: 65px;
+}
+.fa-solid{
+    margin-left: 5px;
+}
+.account-Container{
+    max-width: 400px;
+    height: 80px;
+    background-color: var(--clr-dark-gray);
+    border-radius: 10px;  
+    margin-top: 10px;
+    margin-left: 45px;
+    padding: 15px;
+}
+.account-Container span{
+    font-size: 15px;
+    margin-left: 4px;
+}
+.account-bal{
+    margin-top: 5px;
+    font-weight: bold;
+}
+/* Lower section container style */
+.othersIn{
+    scroll-behavior: smooth;
+    /* overflow-y: scroll; */
+    background-color: var(--clr-floral-white);
+    margin-top: 230px;
+    margin-bottom: 150px;
+}
+.LowerSection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    /* background-color: var(--clr-dark-white); */
+    background-color: var(--clr-floral-white);
+    /* grid-column-gap: 10px;
+    grid-row-gap: 1px; */
+}
+.LowerSection > div{
+    margin: 20px;
+}
+.LowerSection  i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--clr-orange);
+    padding: 10px;
+    background-color: var(--clr-white);
+    text-align: center;
+    border: 2px solid rgb(235, 233, 233);
+    /* box-shadow:  0 0 25px var(--clr-white); */
+}
+.LowerSection i:hover{
+    background-color: rgb(245, 243, 241);
+    cursor: pointer;
+}
+.LowerSection p{
+    margin: 10px;
+    font-size: 13px;
+    /* text-align: center; */
+    position: relative;
+    position: relative;
+    right: 4px;
+}
+.LowerSection h4{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: -30px;
+}
+.LowerSection p:hover{
+    font-weight: bold;
+    cursor: grab;
+}
+.loansdata{
+    position: relative;
+    left: 2px;
+}
+.virtuals{
+    position: relative;
+    left: -20px;
+}
+.virtual{
+    position: relative;
+    left: -10px;
+}
+.chart{
+    background-color: var(--clr-floral-white);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 14px;
+}
+.chart i{
+    font-size: 10px;
+}
+#mainYellow{
+    color: var(--clr-orange);
+}
+.accountSummary{
+    padding: 15px;
+    display: flex;
+    font-size: 14px;
+}
+.accountSummary .days{
+    margin-left: 10px;
+}
+.pricechart1{
+    padding: 15px;
+    font-size: 14px;
+}
+.pricechart1 hr{
+    border-style: none;
+    border-top-style: dashed;
+    max-width: 280px;
+    border-width: 2px;
+    position: relative;
+    left: 50px;
+    bottom: 10px;
+}
+.taskBarSection{
+    background-color: var(--clr-dark-blue);
+    color: var(--clr-white);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.taskBarSection i{
+    font-size: 20px;
+}
+
+.taskBarSection p{
+    padding: 10px;
+    font-size: 14px;
+    position: relative;
+    left: -50px;
+    top: 20px;
+    text-align: center;
+}
+@media screen and (min-width: 0px) and (max-width: 300px){
+    .pricechart1 hr{
+        max-width: 200px;
+    }
+}
