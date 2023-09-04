@@ -77,6 +77,11 @@ body{
 .account-bal{
     margin-top: 5px;
     font-weight: bold;
+    display: none;
+}
+#hide-Icon:hover{
+    font-size: 15px;
+    color: var(--clr-dark-blue);
 }
 /* Lower section container style */
 .othersIn{
@@ -84,7 +89,7 @@ body{
     /* overflow-y: scroll; */
     background-color: var(--clr-floral-white);
     margin-top: 230px;
-    margin-bottom: 150px;
+    min-height: 750px;
 }
 .LowerSection{
     display: grid;
@@ -175,7 +180,91 @@ body{
     position: relative;
     left: 50px;
     bottom: 10px;
+    color: gray;
 }
+.accountCharts{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    overflow-y: hidden;
+    background-color: var(--clr-dark);
+    position: relative;
+}
+
+.BarChart1{
+    background-color: var(--clr-dark-blue);
+    height: 60px;
+    width: 35px;
+    position: absolute;
+    left: 90px;
+    bottom: -140px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.BarChart2{
+    background-color: var(--clr-orange);
+    height: 60px;
+    width: 35px;
+    position: absolute;
+    left: 110px;
+    bottom: -140px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.BarChart3{
+    background-color: var(--clr-dark-blue);
+    height: 240px;
+    width: 35px;
+    position: absolute;
+    left: 170px;
+    bottom: -140px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.BarChart4{
+    background-color: var(--clr-orange);
+    height: 240px;
+    width: 35px;
+    position: absolute;
+    left: 185px;
+    bottom: -140px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.BarChart5{
+    background-color: var(--clr-dark-blue);
+    height: 30px;
+    width: 35px;
+    position: absolute;
+    left: 245px;
+    bottom: -140px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.BarChart6{
+    background-color: var(--clr-orange);
+    height: 30px;
+    width: 35px;
+    position: absolute;
+    left: 260px;
+    bottom: -140px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.BarChart7{
+    background-color: var(--clr-dark-blue);
+    height: 170px;
+    width: 35px;
+    position: absolute;
+    left: 320px;
+    bottom: -140px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+
+
 .taskBarSection{
     background-color: var(--clr-dark-blue);
     color: var(--clr-white);
@@ -183,24 +272,56 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+    /* text-align: center; */
+    
 }
 .taskBarSection i{
     font-size: 20px;
 }
-
-.taskBarSection p{
-    padding: 10px;
-    font-size: 14px;
+.taskBarSection i:hover{
+    color: var(--clr-orange);
+    transition: .3s;
+    cursor: pointer;
+}
+.taskBarSection > div p{
+    font-size: 15px;
+}
+.taskBarSection > div .home, .beneficiary, .frequent, .setting{
     position: relative;
-    left: -50px;
-    top: 20px;
-    text-align: center;
+    left: -3px;
 }
 @media screen and (min-width: 0px) and (max-width: 300px){
+    .othersIn{
+        margin-top: 250px;
+    }
     .pricechart1 hr{
         max-width: 200px;
+    }
+    .taskBarSection p{
+        padding: 0;
+        font-size: 13px;
+        position: relative;
+        left: -20px;
+        top: 20px;
+        bottom: 10px;
+        margin-bottom: 25px;
+    }
+    .taskBarSection{
+        padding: 3px;
+    }
+    .taskBarSection i{
+        font-size: 15px;
+    }
+    .taskBarSection > div p{
+        padding: 2px;
+        font-size: 13px;
+       margin-left: 10px;
+    }
+    .taskBarSection > div .home{
+      position: relative;
+      left: -10px;
     }
 }

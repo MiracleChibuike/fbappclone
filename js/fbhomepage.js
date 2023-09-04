@@ -8,3 +8,12 @@ var current_date = date.getDate() + "/ " + (date.getMonth()+1) + " / " + date.ge
 var curent_time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 var date_time = update.toDateString() +" " + curent_time;
 usersLastLogin.textContent = date_time;
+// code to hide the balance of our account
+let hideAccountDetails = document.getElementById("Account-Hide");
+let account_HideActivateIcon = document.getElementById("hide-Icon").addEventListener("click", function () {
+    if (hideAccountDetails.style.display == "none") {
+       hideAccountDetails.style.display = "block"
+    }else{
+        hideAccountDetails.style.display = "none"
+    }
+})
