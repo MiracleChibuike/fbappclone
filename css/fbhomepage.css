@@ -12,6 +12,7 @@
     --clr-gray: rgb(55, 54, 54);
     --clr-dark-gray: rgb(118, 116, 116);
     --clr-floral-white: rgb(218, 216, 213);
+    --clr-secondary-blue: #121544;
 }
 body{
     font-family: 'Asap Condensed', sans-serif;
@@ -30,6 +31,44 @@ body{
 .upperTabs{
     display: flex;
     justify-content: space-between;
+}
+/* For the account details dropdown on the click */
+.dripDownAccounts{
+    background: var(--clr-dark-blue);
+    box-shadow: 0 0 30px black;
+    width: 280px;
+    height: 600px;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    border-radius: 3px;
+    z-index: 100;
+    display: none;
+    animation-name: navBarAnimate;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    transition: all .5s;
+    /* overflow-y: scroll; */
+}
+@keyframes navBarAnimate {
+    0%{
+        width: 0;
+        height: 0;
+    }
+    25%, 50%, 100%{
+        width: 280px;
+            height: 600px;
+    }
+}
+.icons >div{
+    margin: 22px;
+    font-size: 14px;
+}
+.icons >div:hover{
+    cursor: pointer;
+}
+.icons >div span{
+    margin: 0 15px 0;
 }
 .secondTabs{
     margin-top: 30px;
@@ -60,6 +99,12 @@ body{
 }
 .fa-solid{
     margin-left: 5px;
+}
+#navbarShow:hover{
+    cursor: pointer;
+}
+#navbarRemove{
+    display: none;
 }
 .account-Container{
     max-width: 400px;

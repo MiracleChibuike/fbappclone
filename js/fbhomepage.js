@@ -17,3 +17,39 @@ let account_HideActivateIcon = document.getElementById("hide-Icon").addEventList
         hideAccountDetails.style.display = "none"
     }
 })
+
+// displaying the navbar on the click on the menu icon
+
+let dropDownNav = document.querySelector(".dripDownAccounts");
+var navDisplay = document.getElementById("navbarShow");
+
+function showNav() {
+    if (dropDownNav.style.display = "none") {
+        dropDownNav.style.display = "block"
+        navDisplay.style.display = "none";
+        console.log(navClose)
+        navClose.style.display = "block"
+    }
+}
+var mBody = document.body
+
+let navClose = document.querySelector("#navbarRemove");
+function removeNav() {
+    if (dropDownNav.style.display = "block") {
+        dropDownNav.style.display = "none";
+        navClose.style.display = "none";
+        navDisplay.style.display = "block"
+    }
+
+}
+    function closeOnBody() {
+         if (dropDownNav.style.display = "block") {
+        dropDownNav.style.display = "none"
+         navClose.style.display = "none";
+                 navDisplay.style.display = "block"
+
+    }
+    }
+
+   
+   

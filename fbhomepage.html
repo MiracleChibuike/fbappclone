@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FB | Dashboard</title>
     <script src="https://kit.fontawesome.com/9b5c4c6b23.js" crossorigin="anonymous"></script>
     <!-- googl-fonts link -->
     <style>
@@ -18,9 +18,75 @@
         <!-- CONTAINER FOR THE UPPER-SECTION -->
         <div class="upperSection">
             <div class="upperTabs">
-                <i class="fa-solid fa-bars"></i>
+               <div class="bar">
+                <i class="fa-solid fa-bars" id="navbarShow" onclick="showNav()"></i>
+                <i class="fa-solid fa-xmark" id="navbarRemove" onclick=" removeNav()"></i>
+               </div>
                 <h3>Dashboard</h3>
                 <i class="fa-regular fa-bell"></i>
+            </div>
+            <div class="dripDownAccounts">
+                <!-- For all Icons and details on the Navbar menu -->
+                <div class="icons">
+                 <div class="user">
+                    <i class="fa-regular fa-user"></i>
+                    <span>My Accounts</span>
+                 </div>
+                 <div class="icon2">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <span>Frequent Transactions</span>
+                 </div>
+                 <div class="icon3">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Pay Bills</span>
+                 </div>
+                 <div class="icon4">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                   <span>Buy Airtime</span>
+                 </div>
+                 <div class="icon5">
+                    <i class="fa-solid fa-right-left"></i>
+                    <span>Transfer Money</span>
+                 </div>
+                 <div class="icon6">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Beneficiary Management</span>
+                 </div>
+                 <div class="icon7">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <span>Card Services</span>
+                 </div>
+                 <div class="icon8">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <span>Self Services</span>
+                 </div>
+                 <div class="icon9">
+                    <i class="fa-solid fa-naira-sign"></i>
+                    <span>Loans</span>
+                 </div>
+                 <div class="icon10">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Digital Payment</span>
+                 </div>
+                 <div class="icon11">
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                    <span>Lifestyle</span>
+                 </div>
+                 <hr>
+                 <div class="icon12">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Account Settings</span>
+                 </div>
+                 <div class="icon13">
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    <span>Share Experience</span>
+                 </div>
+                 <div class="icon14">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                 </div>
+                </div>
+         
             </div>
             <div class="secondTabs">
                 <div class="mainInfo">
@@ -45,7 +111,7 @@
                         
                </div>
             </div>
-            <div class="othersIn">
+            <div class="othersIn" onclick="closeOnBody()">
                 <div class="LowerSection">
                     <div class="transfer">
                         <i class="fa-sharp fa-solid fa-arrow-right-arrow-left"></i>
